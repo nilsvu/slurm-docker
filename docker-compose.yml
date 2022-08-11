@@ -2,8 +2,7 @@ version: "3.8"
 services:
   slurm:
     hostname: slurm
-    build:
-      context: .
+    image: nilsvu/hpc-tutorial:latest
     volumes:
       - clusterstate:/state
       - clusterscratch:/scratch
